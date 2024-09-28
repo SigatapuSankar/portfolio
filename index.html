@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet"  href="style.css">
+    <link rel="shortcut icon" href="./images1/page_logo (2).png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f43ea30f5d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images1/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Aspiring Developer of Digital Worlds</p>
+                <h1>Hi , I'm <span>Sai Sankar</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------About section------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic1111.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a highly motivated student, I am actively seeking a challenging role that will provide me with the 
+                        opportunity to further enhance my skills. I am eager to find an opportunity that not only allows me to
+                        apply my technical knowledge but also offers an opportunity for continuous improvement and 
+                        growth...As a recent graduate, I am determined to improve and grow as a professional with a dynamic and 
+                        innovative team. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>PROGRAMMING</span><br>C,C++,Java,Python(Intermediate)</li>
+                            <li><span>WEB DEVELOPMENT</span><br>HTML & CSS,React</li>
+                            <li><span>TECHNOLOGIES</span><br>MySQL,UX/UI using AbobeXD</li>
+                            <li><span>OTHER...</span><br>Debugging,DSA using CPP,Design & Analysis of Algorithm<br>
+                                Banner Designing and Photo Editing using Adobe Photoshop</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span><br>Smart Interviews-Student Mentor</span><br>Key responsibilities:<br>
+                                1. Guiding and assisting juniors in mastering Data Structures and Algorithms.<br>
+                                2. Clarifying doubts, identifying code errors, and providing debugging guidance </li>
+                            <li><span>Kodnest-Java Full Stack</span><br>During the internship, I acquired proficiency in HTML, CSS, JavaScript, and React by developing a portfolio and a Adventure website utilizing React.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BACHLOR DEGREE OF INFORMATION TECHNOLOGY</span><br>Prasad V Potluri Siddhartha Institute Of Technology<br>Kanuru,Vijayawada<br>CGPA:8.73<br>Batch:2020-2024</li>
+                            <li><span>INTERMEDIATE EDUCATION</span><br>Sarada Educational Institutions<br>Mogalrajpuram,Vijayawada <br>CGPA:9.75 <br>Batch:2018-2020</li>
+                            <li><span>SECONDARY EDUCATION</span><br>S.T.B.E.M.High School <br>Onetown,Vijayawada <br>CGPA:8.3 <br>Batch:2018</li>
+                        </ul>
+                    </div>                                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------services---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-file-code"></i>
+                    <h2>DSA Course</h2>
+                    <p>I offer professional assistance in Data Structures and Algorithms (DSA) using C++. I can help you understand DSA concepts, solve related problems, and excel in your programming journey</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-code-compare"></i>
+                    <h2>Debugging</h2>
+                    <p>I offer professional C and C++ code debugging and error fixing services. I use diverse methods to solve problems and provide customized solutions to enhance code functionality and performance.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Dezine the Website based on your requirement and can deliver a working HTML & CSS Website</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------Projects----------- -->
+    <div id="projects" class="projects" style="padding-top: 90px;">
+        <div class="container">
+            <h1 class="sub-title" id="projectSubTitle">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images1/TechShop Application.png">
+                    <div class="layer">
+                        <h3>Tech Shop</h3>
+                        <p>Created a web application with user sign-up/login functionality, product view, cart management, and product info pages, showcasing HTML & CSS skills.<br>(HTML & CSS)</p>
+                        <a href="https://sankarsai2002.github.io/TechShop/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>                   
+                </div>
+                <div class="work">
+                    <img src="images1/ToDoApplication.png">
+                    <div class="layer">
+                        <h3>ToDo Application</h3>
+                        <p>Created a task management app using local storage, allowing users to add, edit, and delete tasks. Features include sorting tasks by start/end date, individual deletion, and a delete-all button.<br>(HTML,CSS,JavaScript)</p>
+                        <a href="https://sankarsai2002.github.io/ToDo/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>                   
+                </div>
+                <div class="work">
+                    <img src="images1/achieversIT.png">
+                    <div class="layer">
+                        <h3>AchieversIT Webpage</h3>
+                        <p>Developed a static webpage for AchieversIT. The project showcases fundamental web development skills, focusing on clean layout design and effective presentation of information.<br>(HTML and CSS)</p>
+                        <a href="https://sankarsai2002.github.io/AchieversITWebsite/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>                   
+                </div>
+                <div class="work displaying-none" id="project1">
+                    <img src="images1/work-3.png">
+                    <div class="layer">
+                        <h3>Adventure Explorer</h3>
+                        <p>A visually appealing frontend React website that displays a 
+                            variety of products, services, and igniting your sense of adventure
+                            for your next journey.<br>(HTML,CSS,React)</p>
+                        <a href="https://github.com/sankarsai2002/Adventure-Website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>                
+                </div> 
+                <div class="work displaying-none" id="project1">
+                    <img src="images1/garageBandApplication.png">
+                    <div class="layer">
+                        <h3>Garage Band</h3>
+                        <p>Developed a browser-based drum kit application using JavaScript event listeners, allowing users to play drums via keyboard or mouse, creating an engaging and interactive experience.<br>(HTML,CSS,JavaScript)</p>
+                        <a href="https://sankarsai2002.github.io/Garage-Band/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>                   
+                </div>
+                <div class="work displaying-none" id="project1">
+                    <img src="images1/DiceRoller.png">
+                    <div class="layer">
+                        <h3>Dice Roller</h3>
+                        <p>Built an interactive dice rolling app with custom design, animations, and random number generation, enhancing user experience with animations.<br>(HTML,CSS,JavaScript)</p>
+                        <a href="https://sankarsai2002.github.io/DiceRoller/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>                   
+                </div> 
+                <div class="work displaying-none" id="project1">
+                    <img src="images1/Netflix.png">
+                    <div class="layer">
+                        <h3>Netflix</h3>
+                        <p>Built a web application replicating an older version of Netflix’s user interface. The app allows users to search for movies and displays detailed information retrieved using a third-party API. <br>(HTML,CSS,JS-API)</p>
+                        <a href="https://github.com/sankarsai2002/Netflix" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>                   
+                </div> 
+                <div class="work displaying-none" id="project1">
+                    <img src="images1/FB_Login.png">
+                    <div class="layer">
+                        <h3>FaceBook Login Page</h3>
+                        <p>Created a static Facebook login page using Bootstrap, showcasing basic layout design and form elements with Bootstrap. <br>(Bootstrap)</p>
+                        <a href="https://sankarsai2002.github.io/FB_Login/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>                   
+                </div> 
+                <div class="work displaying-none" id="project1">
+                    <img src="images1/work_main-1.png">
+                    <div class="layer">
+                        <h3>Car Sentry - A Owner Assistant</h3>
+                        <p>This IoT project features a device that detects human presence near a car, 
+                            captures video footage, and sends it via email for remote monitoring and 
+                            security. Also applied for patents to protect this innovative solution.<br>(IOT) </p>
+                        <a href="https://drive.google.com/file/d/1O8FSC4zr_gjmRKP0qJ1nBISAZ0Yr2Nag/view"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>                              
+            </div>
+            <a class="btn" onclick="viewMoreProjects()" id="projectBtn">See more</a>
+        </div>
+    </div>
+<!-- ------------publications------------ -->
+    <div id="publications" class="publications">
+        <div class="container">
+        <h1 class="sub-title">Publications</h1>
+        <div class="publication-list">
+            <div class="publication-work">
+            <img src="images1/publication_image.png" alt="Publication">
+            <div class="publication-overlay">
+                <div class="publication-content">
+                <h3>Human Activity Classification based on Smartphone Data</h3>
+                <p>International Journal For Innovative Engineering and Management Research</p>
+                <p>The publication mainly focuses on recognizing the fundamental human activities such as running, standing, and walking using Supervised Machine Learning techniques.</p>
+                <a href="https://www.ijiemr.org/public/uploads/paper/511511675672961.pdf" target="_blank"><i class="fas fa-external-link-alt"></i> Read Publication</a>
+                </div>
+            </div>
+            </div>
+            
+            <div class="publication-work">
+                <img src="images1/patent-journal.jpg" alt="Pending Patent">
+                <div class="publication-overlay">
+                    <div class="publication-content">
+                        <h3>CAR SENTRY-OWNER ASSISTANT</h3>
+                        <p>Department for Promotion of Industry and Internal Trade(Pending Patent Application journal)</p>
+                        <p>Application Number: <strong>202341034526 A</strong></p>
+                        <p>Developed for car safety and technology, in collaboration with Dr. Haritha Akkineni, Associate Professor, Dept of Information Technology.</p>
+                        <a href="https://drive.google.com/file/d/1O8FSC4zr_gjmRKP0qJ1nBISAZ0Yr2Nag/view" target="_blank"><i class="fas fa-external-link-alt"></i> View Pending Patent</a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="publication-work">
+                <!-- made empty so that one which is displayed will be in a proper size while displayed -->
+            </div>
+            <!-- Add more publication cards here -->
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+
+<!-- -----------Certificates----------- -->
+    <div id="certificates" style="padding-top: 90px;">
+        <div class="container">
+        <h1 class="sub-title" id="certificateSubTitle">Certificates</h1>
+        <div class="certificate-list">
+            <div class="certificate">
+            <img src="images1/certificate1.png">
+            <div class="layer">
+                <h3>Advanced Data Structures and Algorithms</h3>
+                <p>I am certified as a smart coder by Smart Interviews for successfully completing the course that emphasizes simplifying complex coding problems, developing problem-solving skills, and teaching techniques for writing high-performance algorithms.</p>
+                <a href="https://smartinterviews.in" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            </div>
+            <div class="certificate">
+                <img src="images1/smartinterviews.in_certificate.png">
+                <div class="layer">
+                    <h3>Smart Interviews Mentor</h3>
+                    <p>I completed a mentorship program for the Smart Coder initiative by Smart Interviews from May 2023 to April 2024. This mentorship focused on guiding and nurturing aspiring coders, enhancing their problem-solving skills, and offering insights into high-performance algorithms and software development practices.</p>
+                    <a href="https://smartinterviews.in" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> 
+            <div class="certificate">
+            <img src="images1/certificate3.png">
+            <div class="layer">
+                <h3>Programming in Java</h3>
+                <p>I completed an NPTEL Swayam Java course that provided valuable knowledge 
+                    and skills in Java programming, including important concepts and practical applications.</p>
+                <a href="https://onlinecourses.nptel.ac.in/noc22_cs102/course" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            </div>
+            <div class="certificate displaying-none" id="certificate">
+            <img src="images1/certificate2.png">
+            <div class="layer">
+                <h3>Data Base Management System</h3>
+                <p>I successfully completed an NPTEL Swayam course on Database Management 
+                    System (DBMS), acquiring valuable skills and expertise in effectively 
+                    managing databases.</p>
+                <a href="https://onlinecourses.nptel.ac.in/noc22_cs91/course" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            </div>
+            <div class="certificate displaying-none" id="certificate">
+                <img src="images1/certificate4.jpeg">
+                <div class="layer">
+                    <h3>ROBOTIC PROCESS AUTOMATION</h3>
+                    <p>I've completed the EduSkills RPA Rider Internship Program in partnership with Blue Prism. This program enhanced my understanding of RPA from scratch and equipped me with practical skills to use RPA for solving real-world problems. The internship provided hands-on insights that enriched my knowledge of RPA's potential.</p>
+                    <a href="https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=55e0959c23d3de0a155d044bf19dacdd" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>  
+            <div class="certificate displaying-none" id="certificate">
+                <img src="images1/certificate5-1.png">
+                <div class="layer">
+                <h3>Basics of Python</h3>
+                <p>
+                    I've finished the "Basics of Python" course, which provided me with a strong understanding of Python fundamentals. Throughout the course, I learned about essential concepts that form the core of the Python programming language. This knowledge has equipped me with a solid grasp of Python, enhancing my overall programming skill</p>
+                <a href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_013204562301591552112_shared/1-a0786a37-26b7-48fb-b7cc-824db9106ae5.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="certificate displaying-none" id="certificate">
+                <img src="images1/certificate6-1.png">
+                <div class="layer">
+                <h3>Artificial Intelligence</h3>
+                <p>Completed an Artificial Intelligence internship at SkillDzire Foundation, where I deepened my understanding of AI concepts, enhancing my knowledge in the field.</p>
+                <a href="https://onlinecourses.nptel.ac.in/noc22_cs102/course" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a onclick="viewMoreCertificates()" class="btn" id="certifcateBtn">See more</a>
+        </div>
+    </div>
+    
+    <!-- ----------contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sankarsai2002@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7095210823</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/sai.sankar.sigatapu/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/s_sai_sankar/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sigatapu-sai-sankar-04655521a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <br>
+                        <br>
+                        <a href="https://www.hackerrank.com/sankarsai2002?hr_r=1" target="_blank"><img src="images1/HackerRank_logo.png" style="margin-left: -4px;"></a>
+                        <a href="https://leetcode.com/sankarsai2002/" target="_blank"><img src="images1/LeetCode_logo_black-2.png"></a>
+                        <a href="https://www.codechef.com/users/shanks_1" target="_blank"><img src="images1/codechef-logo-1.png"></a>
+                    </div>
+                    <a href="Sigatapu Sai Sankar.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright S.Sai Sankar. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+        <!-- meni icons -->
+        <div class="page-navigation">
+            <div class="hidden-icons">
+                <a href="#header"><i class="fas fa-home"></i></a>
+                <a href="#about"><i class="fas fa-male"></i></a>
+                <a href="#services"><i class="fa-solid fa-bell-concierge"></i></a> 
+                <a href="#projects"><i class="fa-solid fa-diagram-project"></i></a>
+                <a href="#publications"><i class="fa-solid fa-scroll"></i></a>
+                <a href="#certificates"><i class="fas fa-award"></i></a>
+                <a href="#contact"><i class="fa-regular fa-address-card"></i></a>
+            </div>
+            <i class="fas fa-bars menu-icon" style="display: none;"></i>
+        </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById('sidemenu');
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxvi1DxVONJhklnzvzKwdtJRRxdHaXn6NRf7avTeEQHRxdBqAR4D23HIrb5ZqZLwzum/exec'
+    const form = document.forms['submit-to-google-sheet']
+    
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            // the message will be removed after 5 sec
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    <!-- for menu icons at bottom -->
+<script>
+    function toggleMenuIconVisibility() {
+      const isMobile = window.innerWidth <= 768;
+      const sectionHeight = window.innerHeight;
+
+      if (!isMobile) {
+        if (window.scrollY > sectionHeight) {
+          menuIcon.style.display = 'block';
+        } else {
+          menuIcon.style.display = 'none';
+        }
+      } else {
+        menuIcon.style.display = 'none';
+      }
+    }
+  
+    window.addEventListener('scroll', toggleMenuIconVisibility);
+  
+    const menuIcon = document.querySelector('.menu-icon');
+    const pageNavigation = document.querySelector('.page-navigation');
+  
+    menuIcon.addEventListener('click', () => {
+      const isMenuOpen = pageNavigation.classList.toggle('open');
+      
+      if (isMenuOpen) {
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-times');
+      } else {
+        menuIcon.classList.remove('fa-times');
+        menuIcon.classList.add('fa-bars');
+      }
+    });
+</script>
+
+<!-- for display more in projects -->
+<script>
+    function viewMoreProjects(){
+        let displayingNone = document.querySelectorAll("#project1");
+        let projectBtn = document.getElementById("projectBtn");
+        let projectSubTitle = document.getElementById("projectSubTitle");
+        if(projectBtn.innerText=="See more"){
+            displayingNone.forEach((value)=>{
+                value.classList.remove("displaying-none");
+            })
+            projectBtn.innerText = "See less";
+        }
+        else{
+            displayingNone.forEach((value)=>{
+                value.classList.add("displaying-none");
+            });
+            projectBtn.innerText = "See more";
+            projectSubTitle.scrollIntoView({behavior:"instant"});
+        }
+    }
+</script>
+
+<!-- for display more in certificates -->
+<script>
+    function viewMoreCertificates(){
+        let displayingNone = document.querySelectorAll("#certificate");
+        let certifcateBtn = document.getElementById("certifcateBtn");
+        let certificateSubTitle = document.getElementById("certificateSubTitle");
+        if(certifcateBtn.innerText=="See more"){
+            displayingNone.forEach((value)=>{
+                value.classList.remove("displaying-none");
+            })
+            certifcateBtn.innerText = "See less";
+        }
+        else{
+            displayingNone.forEach((value)=>{
+                value.classList.add("displaying-none");
+            })
+            certifcateBtn.innerText = "See more";
+            certificateSubTitle.scrollIntoView({behavior:"instant"});
+        }
+    }
+</script>
+
+</body>
+</html>
